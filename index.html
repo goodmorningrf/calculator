@@ -24,7 +24,7 @@
 			</div>
 		</div>
 		<div class="form-group row" id="subBase">
-			<label for="base" class="col-2 col-form-label">Подписка либо базы</label>
+			<label class="col-2 col-form-label">Подписка либо базы</label>
 			<div class="col-5">
 				<button type="button" onclick="remove()" class="form-group col btn btn-primary">База</button>
 				<button type="button" onclick="show()" class="form-group col btn btn-primary">Подписка</button>
@@ -63,11 +63,15 @@
 		<div class="form-group row">
 			<label for="phoneCalls" class="col-2 col-form-label">Расчитать стоимость</label>
 			<div class="col-5">
-				<button type="button" onclick="getPricing()" class="form-group row btn btn-primary">Расчитать стоимость</button>
+				<button type="button" onclick="getPricing()" class="form-group row col btn btn-primary">Расчитать стоимость</button>
+                <button type="button" onclick="clearResult()" class="form-group row btn btn-primary">Очистить</button>
 				<script type="text/javascript" src="js/index.js"></script>
+                <p id="sumBase"></p>
 				<p id="sumDay"></p>
 				<p id="sumWeek"></p>
+                <p id="costWeek"></p>
 				<p id="sumMonth"></p>
+                <p id="costMonth"></p>
 			</div>
 		</div>
 	</div>
