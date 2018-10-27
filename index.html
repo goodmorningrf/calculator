@@ -3,19 +3,19 @@
 <head>
 	<title>Calculator</title>
 	<meta charset="UTF-8">
-	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.4/js/tether.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.5.2/qs.js"></script>
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E=" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
 	<script src="js/index.js"></script>
 </head>
 <body>
 	<div class="col-xs-1" align="center">
 		<div class="form-group row" id="formBase">
-			<label for="business" class="col-2 col-form-label">Тип базы</label>
+			<label for="business" class="col-2 col-form-label text">Тип базы</label>
 			<div class="col-5">
 				<select id="business" class="form-control">
 					<option selected value="true">Юр. лица</option>
@@ -24,20 +24,20 @@
 			</div>
 		</div>
 		<div class="form-group row" id="subBase">
-			<label class="col-2 col-form-label">Подписка либо базы</label>
+			<label class="col-2 col-form-label text">Подписка либо базы</label>
 			<div class="col-5">
 				<button type="button" onclick="remove()" class="form-group col btn btn-primary">База</button>
 				<button type="button" onclick="show()" class="form-group col btn btn-primary">Подписка</button>
 			</div>
 		</div>
 		<div class="form-group row" id="contactNumber" style="visibility: hidden">
-			<label for="totalContacts" class="col-2 col-form-label">Количество контактов</label>
+			<label for="totalContacts" class="col-2 col-form-label text">Количество контактов</label>
 			<div class="col-5">
 				<input class="form-control" type="number" value=""  id="totalContacts">
 			</div>
 		</div>
 		<div class="form-group row" style="visibility: visible" id="schedule">
-			<label for="duration" class="col-2 col-form-label">График</label>
+			<label for="duration" class="col-2 col-form-label text">График</label>
 			<div class="col-5">
 				<select id="duration" class="form-control">
 					<option selected value="4 15">2/2 либо 3/3</option>
@@ -49,13 +49,13 @@
 			</div>
 		</div>
 		<div class="form-group row" id="operatorNumber">
-			<label for="operators" class="col-2 col-form-label">Количество операторов</label>
+			<label for="operators" class="col-2 col-form-label text">Количество операторов</label>
 			<div class="col-5">
 				<input class="form-control" type="number" value="" id="operators">
 			</div>
 		</div>
 		<div class="form-group row" id="callNumber">
-			<label for="phoneCalls" class="col-2 col-form-label">Количество звонков в день</label>
+			<label for="phoneCalls" class="col-2 col-form-label text">Количество звонков в день</label>
 			<div class="col-5">
 				<input class="form-control" type="number" value="" id="phoneCalls">
 			</div>
