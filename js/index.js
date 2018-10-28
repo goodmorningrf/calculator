@@ -53,22 +53,22 @@ function getCostMonth(cost) {
         return 1.5
     }
     if (cost <= 3000 || cost <= 4999) {
-        return 1.4
+        return 1.5
     }
     if (cost <= 5000 || cost <= 9999) {
-        return 1.3
+        return 1.4
     }
     if (cost <= 10000 || cost <= 19999) {
-        return 1.2
+        return 1.3
     }
     if (cost <= 20000 || cost <= 29999) {
-        return 1.1
+        return 1.2
     }
     if (cost <= 30000 || cost <= 39999) {
-        return 1
+        return 1.1
     }
     if (cost <= 40000 || cost <= 49999) {
-        return 0.9
+        return 1
     }
     if (cost <= 50000 || cost <= 59999) {
         return 0.9
