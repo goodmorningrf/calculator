@@ -370,13 +370,13 @@ function getPricing() {
             document.getElementById("sumDay").innerText=`Контактов в день: ${dayContacts(operators, dayCalls)}`;
             document.getElementById("sumWeek").innerText=`Контактов в неделю: ${weekContacts(operators, dayCalls, scheduleWeek)}`;
             document.getElementById("sumMonth").innerText=`Контактов в месяц: ${monthContacts(operators, dayCalls, scheduleMonth)}`;
-            document.getElementById("costWeek").innerText=`Цена в неделю: ${Math.round(weekContacts(operators, dayCalls, scheduleWeek) * getPhisCostWeek(week))}`;
+            document.getElementById("costWeek").innerText=`Цена в неделю для физ. лиц: ${Math.round(weekContacts(operators, dayCalls, scheduleWeek) * getPhisCostWeek(week))}`;
             document.getElementById("costMonth").innerText=`Цена в месяц для физ. лиц: ${Math.round(monthContacts(operators, dayCalls, scheduleMonth) * getPhisCostMonth(month))}`;
         } else {
             document.getElementById("sumDay").innerText=`Контактов в день: ${dayContacts(operators, dayCalls)}`;
             document.getElementById("sumWeek").innerText=`Контактов в неделю: ${weekContacts(operators, dayCalls, scheduleWeek)}`;
             document.getElementById("sumMonth").innerText=`Контактов в месяц: ${monthContacts(operators, dayCalls, scheduleMonth)}`;
-            document.getElementById("costWeek").innerText=`Цена в неделю: ${weekContacts(operators, dayCalls, scheduleWeek) * getCostWeek(week)}`;
+            document.getElementById("costWeek").innerText=`Цена в неделю для юр лиц: ${weekContacts(operators, dayCalls, scheduleWeek) * getCostWeek(week)}`;
             document.getElementById("costMonth").innerText=`Цена в месяц для юр лиц: ${Math.round(monthContacts(operators, dayCalls, scheduleMonth) * getCostMonth(month))}`;
         }
     }
