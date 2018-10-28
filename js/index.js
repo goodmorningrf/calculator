@@ -369,7 +369,7 @@ function getPricing() {
         document.getElementById("sumMonth").innerText=`Контактов в месяц: ${monthContacts(operators, dayCalls, scheduleMonth)}`;
         document.getElementById("costWeek").innerText=`Цена в неделю: ${weekContacts(operators, dayCalls, scheduleWeek) * getCostWeek(week)}`;
         document.getElementById("costMonth").innerText=`Цена в месяц: ${Math.round(monthContacts(operators, dayCalls, scheduleMonth) * getCostMonth(month))}`;
-        if (business === 'true') {
+        if (business === 'false') {
             document.getElementById("costWeek").innerText=`Цена в неделю: ${Math.round(weekContacts(operators, dayCalls, scheduleWeek) * getPhisCostWeek(week))}`;
             document.getElementById("costMonth").innerText=`Цена в месяц: ${Math.round(monthContacts(operators, dayCalls, scheduleMonth) * getPhisCostMonth(month))}`;
         }
