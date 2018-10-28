@@ -99,31 +99,31 @@ function getCostMonth(cost) {
 // TODO
 function getOneTimeCost(cost) {
     if (cost <= 1000 || cost <= 2999) {
-        return 1.5
-    }
-    if (cost <= 3000 || cost <= 4999) {
         return 1.4
     }
+    if (cost <= 3000 || cost <= 4999) {
+        return 1.2
+    }
     if (cost <= 5000 || cost <= 9999) {
-        return 1.3
+        return 1.2
     }
     if (cost <= 10000 || cost <= 19999) {
-        return 1.2
+        return 1
     }
     if (cost <= 20000 || cost <= 29999) {
         return 1
     }
     if (cost <= 30000 || cost <= 39999) {
-        return 1
-    }
-    if (cost <= 40000 || cost <= 49999) {
         return 0.9
     }
-    if (cost <= 50000 || cost <= 59999) {
+    if (cost <= 40000 || cost <= 49999) {
         return 0.8
     }
-    if (cost <= 60000 || cost <= 69999) {
+    if (cost <= 50000 || cost <= 59999) {
         return 0.7
+    }
+    if (cost <= 60000 || cost <= 69999) {
+        return 0.6
     }
     if (cost <= 70000 || cost <= 79999) {
         return 0.6
@@ -219,7 +219,7 @@ function getPhisCostMonth(cost) {
         return 0.8
     }
     if (cost <= 60000 || cost <= 69999) {
-        return 0.7
+        return 0.8
     }
     if (cost <= 70000 || cost <= 79999) {
         return 0.7
@@ -267,7 +267,7 @@ function getPhisCostOneTime(cost) {
         return 0.4
     }
     if (cost <= 60000 || cost <= 69999) {
-        return 0.4
+        return 0.3
     }
     if (cost <= 70000 || cost <= 79999) {
         return 0.3
